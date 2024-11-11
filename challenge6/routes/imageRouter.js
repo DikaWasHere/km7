@@ -3,6 +3,10 @@ const multer = require("../libs/multer");
 const MediaControllers = require("../controllers/mediaControllers");
 const mediaControllers = require("../controllers/mediaControllers");
 
+router.get("/", (req, res) => {
+  res.send("deploy ni");
+});
+
 router.post(
   "/upload-image",
   multer.single("image"),
