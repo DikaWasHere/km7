@@ -11,6 +11,6 @@ const port = process.env.PORT || 3000;
 
 app.use("/", router);
 
-app.listen(port, (req, res) => {
+app.listen(port, "0.0.0.0", (req, res) => {
   console.log(`Port ${port} sedang berjalan`);
 });
